@@ -209,11 +209,7 @@ def cource(first_api):
 	        print(i+1,cource[i]['name'],"id =",cource[i]['id'])
         course_select=int(input("enter a cource number:"))
         for j in range(len(parents)):
-            print(j+1,"-",parents[j]['name'])
-        counter = 1
-        for index in parents[j-1]["childExercises"]:
-            print("      ",counter,".",index["name"])
-            counter+=1
+            print(j+1,"-",parents[j]['name']
         select_parent=int(input("select a parent"))
         print(parents[select_parent-1]["name"])
         count=1
