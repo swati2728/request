@@ -230,7 +230,7 @@ def cource(first_api):
 # index=0
 # while index<len(select_child):
         if Previous_Navigation =='p':
-            print(parents[select_parent-2]["childExercises"][select_child-2]['slug'])
+            slug=(parents[select_parent-2]["childExercises"][select_child-2]['slug'])
     # index=index+1
             link2="http://saral.navgurukul.org/api/courses/"+str(int(cource[select_child-1]['id']))+"/exercise/getBySlug?slug="+str(slug)
             slug_open=requests.get(link2)
